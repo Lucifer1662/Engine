@@ -1,0 +1,6 @@
+﻿  Source.cpp
+Source.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl sf::RenderWindow::~RenderWindow(void)" (??1RenderWindow@sf@@UEAA@XZ)
+Source.obj : error LNK2001: unresolved external symbol "public: __cdecl sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (??0RenderWindow@sf@@QEAA@VVideoMode@1@AEBVString@1@IAEBUContextSettings@1@@Z)
+Source.obj : error LNK2001: unresolved external symbol "public: __cdecl sf::String::String(char const *,class std::locale const &)" (??0String@sf@@QEAA@PEBDAEBVlocale@std@@@Z)
+Source.obj : error LNK2001: unresolved external symbol "public: __cdecl sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (??0VideoMode@sf@@QEAA@III@Z)
+C:\Users\lhawk\OneDrive\Projects\Engine\x64\Release\Engine.exe : fatal error LNK1120: 4 unresolved externals
