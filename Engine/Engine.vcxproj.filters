@@ -44,13 +44,10 @@
     <ClInclude Include="PolygonConvex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RectangelAndFloorScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MultipleRectangleFloorScene.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CollisionsCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\MultipleRectangleFloorScene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

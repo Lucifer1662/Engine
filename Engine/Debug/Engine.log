@@ -1,6 +1,4 @@
-﻿  Body.cpp
-  SATCollision.cpp
-  Source.cpp
+﻿  Source.cpp
 C:\Users\lhawk\OneDrive\Projects\Engine\Engine\PolygonConvex.h(64,20): warning C4244: 'argument': conversion from 'const float' to 'const unsigned int', possible loss of data
 C:\Users\lhawk\OneDrive\Projects\Engine\Engine\Scenes\MultipleRectangleFloorScene.h(39,21): warning C4018: '<': signed/unsigned mismatch
 C:\Users\lhawk\OneDrive\Projects\Engine\Engine\Source.cpp(5,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
@@ -28,10 +26,9 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
           [
               _Ty=Body
           ]
-C:\Users\lhawk\OneDrive\Projects\Engine\Engine\Scenes\MultipleRectangleFloorScene.h(74): message : see reference to function template instantiation '_Ty &std::vector<_Ty,std::allocator<_Ty>>::emplace_back<glm::vec2,int,int>(glm::vec2 &&,int &&,int &&)' being compiled
+C:\Users\lhawk\OneDrive\Projects\Engine\Engine\Scenes\MultipleRectangleFloorScene.h(78): message : see reference to function template instantiation '_Ty &std::vector<_Ty,std::allocator<_Ty>>::emplace_back<glm::vec2,int,int>(glm::vec2 &&,int &&,int &&)' being compiled
           with
           [
               _Ty=Body
           ]
-  Generating Code...
   Engine.vcxproj -> C:\Users\lhawk\OneDrive\Projects\Engine\Debug\Engine.exe

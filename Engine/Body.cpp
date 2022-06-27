@@ -14,10 +14,10 @@ void Body::updateVelocity(float delta) {
     if (isStatic)
         return;
     velocity += acceleration * delta;
-    //velocity *= 0.9999999f;
+    velocity *= 0.9999999f;
     acceleration = { 0,0 };
 
-    //angularVelocity *= 0.999f;
+    angularVelocity *= 0.99999f;
     angularVelocity += angularAcceleration * delta;
     angularAcceleration = 0;
 

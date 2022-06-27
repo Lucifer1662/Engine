@@ -75,8 +75,8 @@ void Collisions(
     const PolygonConvex& b1, Body& body1,
     const PolygonConvex& b2, Body& body2,
     std::vector<Collision>& collisions){
-    //if (SATCollision(b1.points.begin(), b1.points.end(),
-    //    b2.points.begin(), b2.points.end())) 
+    if (SATCollision(b1.points.begin(), b1.points.end(),
+        b2.points.begin(), b2.points.end())) 
     {
         DIAGCollision(
             b1.points.begin(), b1.points.end(), body1,

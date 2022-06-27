@@ -159,10 +159,9 @@
     <ClInclude Include="CollisionsCache.h" />
     <ClInclude Include="DiagCollision.h" />
     <ClInclude Include="LineIntersion.h" />
-    <ClInclude Include="MultipleRectangleFloorScene.h" />
     <ClInclude Include="PolygonConvex.h" />
-    <ClInclude Include="RectangelAndFloorScene.h" />
     <ClInclude Include="SATCollision.h" />
+    <ClInclude Include="Scenes\MultipleRectangleFloorScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

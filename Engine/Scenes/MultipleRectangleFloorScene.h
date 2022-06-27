@@ -40,11 +40,14 @@ void CollisionThread() {
 		{
 			auto& collision = collisions[i];
 			collision.normal *= -1;
+			//f=ma
+			//f=m dv/dt
+			//f=m dx/dt/dt
 			for (auto& ref : collision.bodies) {
 				collision.normal *= -1;
+				auto k = 1.0f;
+				auto resistiveForce = abs(k * collision.distance) * collision.normal / dt;
 				auto& body = ref.get();
-				auto k = 10.0f;
-				auto resistiveForce = abs(k * collision.distance) * collision.normal;
 				body.addForce(resistiveForce, collision.position);
 			}
 		}
@@ -71,12 +74,12 @@ int MultipleRectangleFloorScene()
 	for (size_t x = 0; x < 10; x++)
 		for (size_t y = 0; y < 5; y++)
 		{
-			bodies.emplace_back(glm::vec2(100 + x * 60, y * 60), 22, 1);
-
 			if (y % 2 == 0) {
+				bodies.emplace_back(glm::vec2(100 + x * 60, y * 60), 22, 1);
 				shapes.push_back(std::make_unique<sf::RectangleShape>(sf::RectangleShape(sf::Vector2f(30, 30))));
 			}
 			else {
+				bodies.emplace_back(glm::vec2(100 + x * 60, y * 60), 15, 1);
 				shapes.push_back(std::make_unique<sf::CircleShape>(sf::CircleShape(15)));
 			}
 
@@ -104,11 +107,11 @@ int MultipleRectangleFloorScene()
 	shapes.back()->setFillColor(sf::Color::White);
 	bodieColliders.push_back(CreateRectangleBottomLeft(size));
 
-	size = glm::vec2(550.0f, 10.0f);
-	bodies.emplace_back(glm::vec2(-100, 600), 550, 1, -glm::pi<float>() / 2.0f, true);
-	shapes.push_back(std::make_unique<sf::RectangleShape>(sf::RectangleShape(sf::Vector2f(size.x, size.y))));
-	shapes.back()->setFillColor(sf::Color::White);
-	bodieColliders.push_back(CreateRectangleBottomLeft(size));
+	//size = glm::vec2(550.0f, 10.0f);
+	//bodies.emplace_back(glm::vec2(-100, 600), 550, 1, -glm::pi<float>() / 2.0f, true);
+	//shapes.push_back(std::make_unique<sf::RectangleShape>(sf::RectangleShape(sf::Vector2f(size.x, size.y))));
+	//shapes.back()->setFillColor(sf::Color::White);
+	//bodieColliders.push_back(CreateRectangleBottomLeft(size));
 
 
 	auto collisionThread = std::thread(CollisionThread);
